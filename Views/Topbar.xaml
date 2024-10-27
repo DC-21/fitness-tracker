@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Fit.Views.Topbar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Fit.Views"
+             Height="60" 
+             Width="Auto">
+    <Grid Background="#007ACC">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Fitness Tracker" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   VerticalAlignment="Center" 
+                   Margin="30,0"
+                   Foreground="White"
+                   HorizontalAlignment="Left"/>
+
+        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Dashboard" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Home_MouseDown" />
+            <TextBlock Text="Goals" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Goals_MouseDown" />
+            <TextBlock Text="Hiking" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Hiking_MouseDown" />
+            <TextBlock Text="Weights" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Weights_MouseDown" />
+            <TextBlock Text="Swimming" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Swimming_MouseDown" />
+            <TextBlock Text="Walking" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Walking_MouseDown" />
+            <TextBlock Text="Running" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Running_MouseDown" />
+            <TextBlock Text="Cycling" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Cycling_MouseDown" />
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <TextBlock x:Name="UserNameTextBlock" FontSize="20" Margin="10" Foreground="White" />
+            <TextBlock Text="Logout" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="LogoutTextBlock_MouseDown" />
+        </StackPanel>
+    </Grid>
+</UserControl>
