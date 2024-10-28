@@ -1,0 +1,82 @@
+﻿<Page x:Class="Fit.Views.HikingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:local="clr-namespace:Fit.Views"
+      mc:Ignorable="d"
+      Title="HikingPage">
+
+    <Grid Background="#F0F0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <local:Topbar Grid.Row="0" />
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Background="White" Padding="30" CornerRadius="15" Margin="10">
+                <StackPanel>
+                    <TextBlock Text="Add Hiking Activity" FontSize="28" FontWeight="Bold" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+
+                    <StackPanel Margin="0,10">
+                        <TextBlock Text="Date" Margin="10,20,0,0" FontWeight="SemiBold" />
+                        <DatePicker x:Name="DateInput" Width="300" Margin="0,5,0,0"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="0,10">
+                        <TextBlock Text="Distance (km)" Margin="10,20,0,0" FontWeight="SemiBold" />
+                        <TextBox x:Name="DistanceInput" Width="300" Height="40" Margin="0,5,0,0" Padding="5" 
+                                 BorderThickness="1" BorderBrush="#B0B0B0" Background="#FFFFFF"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="0,10">
+                        <TextBlock Text="Time Taken (minutes)" Margin="10,20,0,0" FontWeight="SemiBold" />
+                        <TextBox x:Name="TimeTakenInput" Width="300" Height="40" Margin="0,5,0,0" Padding="5" 
+                                 BorderThickness="1" BorderBrush="#B0B0B0" Background="#FFFFFF"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="0,10">
+                        <TextBlock Text="Elevation Gain (meters)" Margin="10,20,0,0" FontWeight="SemiBold" />
+                        <TextBox x:Name="ElevationGainInput" Width="300" Height="40" Margin="0,5,0,0" Padding="5" 
+                                 BorderThickness="1" BorderBrush="#B0B0B0" Background="#FFFFFF"/>
+                    </StackPanel>
+
+                    <Button Content="Add Activity"
+                            Width="300"
+                            Height="40"
+                            Background="#007ACC"
+                            Foreground="White"
+                            FontWeight="Bold"
+                            BorderThickness="0"
+                            Margin="0,20,0,0"
+                            Cursor="Hand"
+                            Click="OnAddActivityClick"
+                            HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Background="White" Padding="20" CornerRadius="15" Margin="10">
+                <DataGrid x:Name="HikingDataGrid"
+                          AutoGenerateColumns="False"
+                          CanUserAddRows="False"
+                          Margin="0"
+                          RowHeight="30">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Date" Binding="{Binding Date}" Width="*" />
+                        <DataGridTextColumn Header="Distance (km)" Binding="{Binding Distance}" Width="*" />
+                        <DataGridTextColumn Header="Time Taken (min)" Binding="{Binding TimeTaken}" Width="*" />
+                        <DataGridTextColumn Header="Elevation Gain (m)" Binding="{Binding ElevationGain}" Width="*" />
+                        <DataGridTextColumn Header="Calories Burned" Binding="{Binding CaloriesBurned}" Width="*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

@@ -20,14 +20,14 @@
                    HorizontalAlignment="Left"/>
 
         <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="Dashboard" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Home_MouseDown" />
-            <TextBlock Text="Goals" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Goals_MouseDown" />
-            <TextBlock Text="Hiking" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Hiking_MouseDown" />
-            <TextBlock Text="Weights" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Weights_MouseDown" />
-            <TextBlock Text="Swimming" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Swimming_MouseDown" />
-            <TextBlock Text="Walking" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Walking_MouseDown" />
-            <TextBlock Text="Running" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Running_MouseDown" />
-            <TextBlock Text="Cycling" Foreground="White" Margin="10" Cursor="Hand" TextDecorations="Underline" FontSize="16" MouseDown="Cycling_MouseDown" />
+            <TextBlock Text="Dashboard" Foreground="White" Margin="10" Cursor="Hand" FontSize="16" MouseDown="Home_MouseDown" />
+            <TextBlock Text="Goals" Foreground="White" Margin="10" Cursor="Hand" FontSize="16" MouseDown="Goals_MouseDown" />
+            <TextBlock Text="Hiking" Foreground="White" Margin="10" Cursor="Hand" FontSize="16" MouseDown="Hiking_MouseDown" />
+            <TextBlock Text="Weights" Foreground="White" Margin="10" Cursor="Hand" FontSize="16" MouseDown="Weights_MouseDown" />
+            <TextBlock Text="Swimming" Foreground="White" Margin="10" Cursor="Hand" FontSize="16" MouseDown="Swimming_MouseDown" />
+            <TextBlock Text="Walking" Foreground="White" Margin="10" Cursor="Hand" FontSize="16" MouseDown="Walking_MouseDown" />
+            <TextBlock Text="Running" Foreground="White" Margin="10" Cursor="Hand"  FontSize="16" MouseDown="Running_MouseDown" />
+            <TextBlock Text="Cycling" Foreground="White" Margin="10" Cursor="Hand"  FontSize="16" MouseDown="Cycling_MouseDown" />
         </StackPanel>
 
         <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">

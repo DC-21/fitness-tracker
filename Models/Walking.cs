@@ -7,7 +7,9 @@ public class Walking : BaseActivity
     public int Steps { get; set; }
     [Required]
     public double Distance { get; set; }
-    [Required]
+
     public double TimeTaken { get; set; }
-}
+
+    public DateTime Date { get; set; }
+    }
 }

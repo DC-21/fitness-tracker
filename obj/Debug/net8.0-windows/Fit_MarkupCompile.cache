@@ -1,7 +1,7 @@
 ﻿Fit
 
 
-winexe
+exe
 C#
 .cs
 C:\Users\chola\source\repos\Fit\obj\Debug\net8.0-windows\
@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\chola\source\repos\Fit\App.xaml
-12861277024
+13-1567879511
 
-30821074183
+452124469100
 273699134509
-MainWindow.xaml;Views\Cycling.xaml;Views\Dashboard.xaml;Views\Goals.xaml;Views\Hiking.xaml;Views\Login.xaml;Views\Register.xaml;Views\Running.xaml;Views\Swimming.xaml;Views\Topbar.xaml;Views\Walking.xaml;Views\Weights.xaml;
+MainWindow.xaml;Views\CyclingPage.xaml;Views\Dashboard.xaml;Views\Goals.xaml;Views\HikingPage.xaml;Views\Login.xaml;Views\PurpleMangoes.xaml;Views\Register.xaml;Views\RunningPage.xaml;Views\SwimmingPage.xaml;Views\Topbar.xaml;Views\WalkingPage.xaml;Views\WeightsPage.xaml;
 
 False
 

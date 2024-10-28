@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Fit.Views
 {
     /// <summary>
-    /// Interaction logic for Weights.xaml
+    /// Interaction logic for PurpleMangoes.xaml
     /// </summary>
-    public partial class Weights : Page
+    public partial class PurpleMangoes : Window
     {
-        public Weights()
+        public PurpleMangoes()
         {
             InitializeComponent();
         }

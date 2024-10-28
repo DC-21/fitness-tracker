@@ -7,7 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\Cycling.xaml.cs">
+    <Compile Update="Views\CyclingPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Dashboard.xaml.cs">
@@ -16,28 +16,31 @@
     <Compile Update="Views\Goals.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Hiking.xaml.cs">
+    <Compile Update="Views\HikingPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\PurpleMangoes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Register.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Running.xaml.cs">
+    <Compile Update="Views\RunningPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Swimming.xaml.cs">
+    <Compile Update="Views\SwimmingPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Topbar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Walking.xaml.cs">
+    <Compile Update="Views\WalkingPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Weights.xaml.cs">
+    <Compile Update="Views\WeightsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -45,7 +48,7 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Cycling.xaml">
+    <Page Update="Views\CyclingPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Dashboard.xaml">
@@ -54,28 +57,31 @@
     <Page Update="Views\Goals.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Hiking.xaml">
+    <Page Update="Views\HikingPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Login.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\PurpleMangoes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Register.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Running.xaml">
+    <Page Update="Views\RunningPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Swimming.xaml">
+    <Page Update="Views\SwimmingPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Topbar.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Walking.xaml">
+    <Page Update="Views\WalkingPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Weights.xaml">
+    <Page Update="Views\WeightsPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

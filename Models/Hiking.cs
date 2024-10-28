@@ -12,5 +12,8 @@ namespace Fit.Models
 
         [Required]
         public double ElevationGain { get; set; }
+
+        [Required]
+        public DateTime Date { get; set; }
     }
 }

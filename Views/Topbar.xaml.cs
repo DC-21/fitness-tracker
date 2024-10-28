@@ -50,7 +50,7 @@ namespace Fit.Views
 
         private void Walking_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NavigateToView("Walking");
+            NavigateToView("WalkingPage");
         }
 
         private void Running_MouseDown(object sender, MouseButtonEventArgs e)
@@ -94,17 +94,17 @@ namespace Fit.Views
                 case "Goals":
                     return new Goals();
                 case "Hiking":
-                    return new Hiking();
+                    return new HikingPage();
                 case "Weights":
-                    return new Weights();
+                    return new WeightsPage();
                 case "Swimming":
-                    return new Swimming();
-                case "Walking":
-                    return new Walking();
+                    return new SwimmingPage();
+                case "WalkingPage":
+                    return new WalkingPage();
                 case "Running":
-                    return new Running();
+                    return new RunningPage();
                 case "Cycling":
-                    return new Cycling();
+                    return new CyclingPage();
                 default:
                     return null;
             }

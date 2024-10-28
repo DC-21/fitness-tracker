@@ -10,5 +10,7 @@ namespace Fit.Models
         public double TimeTaken { get; set; }
         [Required]
         public double AverageHeartRate { get; set; }
+        [Required]
+        public DateTime Date { get; set; }
     }
 }

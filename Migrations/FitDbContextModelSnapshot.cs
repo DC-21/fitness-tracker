@@ -36,6 +36,9 @@ namespace Fit.Migrations
                     b.Property<double>("CaloriesBurned")
                         .HasColumnType("double precision");
 
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<double>("Distance")
                         .HasColumnType("double precision");
 
@@ -66,14 +69,30 @@ namespace Fit.Migrations
                     b.Property<int?>("CyclingId")
                         .HasColumnType("integer");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<int?>("HikingId")
                         .HasColumnType("integer");
 
                     b.Property<bool>("IsAchieved")
                         .HasColumnType("boolean");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
                     b.Property<int?>("RunningId")
                         .HasColumnType("integer");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int?>("SwimmingId")
                         .HasColumnType("integer");
@@ -120,6 +139,9 @@ namespace Fit.Migrations
                     b.Property<double>("CaloriesBurned")
                         .HasColumnType("double precision");
 
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<double>("Distance")
                         .HasColumnType("double precision");
 
@@ -153,6 +175,9 @@ namespace Fit.Migrations
                     b.Property<double>("CaloriesBurned")
                         .HasColumnType("double precision");
 
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<double>("Distance")
                         .HasColumnType("double precision");
 
@@ -182,6 +207,9 @@ namespace Fit.Migrations
 
                     b.Property<double>("CaloriesBurned")
                         .HasColumnType("double precision");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("Laps")
                         .HasColumnType("integer");
@@ -238,6 +266,9 @@ namespace Fit.Migrations
                     b.Property<double>("CaloriesBurned")
                         .HasColumnType("double precision");
 
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<double>("Distance")
                         .HasColumnType("double precision");
 
@@ -267,6 +298,9 @@ namespace Fit.Migrations
 
                     b.Property<double>("CaloriesBurned")
                         .HasColumnType("double precision");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("Repetitions")
                         .HasColumnType("integer");

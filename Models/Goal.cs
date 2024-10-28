@@ -11,9 +11,24 @@ namespace Fit.Models
         [Required]
         public double CalorieTarget { get; set; }
 
+        [Required]
+        [MaxLength(100)]
+        public string Name { get; set; }
+
+        [Required]
+        [MaxLength(100)]
+        public string Description { get; set; }
+
         public double TotalCaloriesBurned { get; set; } = 0;
 
         public bool IsAchieved { get; set; } = false;
+
+        [Required]
+        public DateTime StartDate { get; set; }
+
+        [Required]
+        public DateTime EndDate { get; set; }
+
 
         [ForeignKey("User")]
         public int UserId { get; set; }

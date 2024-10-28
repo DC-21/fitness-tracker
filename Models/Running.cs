@@ -13,5 +13,8 @@ namespace Fit.Models
 
         [Required]
         public double AverageSpeed { get; set; }
+
+        [Required]
+        public DateTime Date { get; set; }
     }
 }
