@@ -26,17 +26,19 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="0">
+                    
+
+                    <Border Background="#FFD700" CornerRadius="15" Margin="10" Padding="20" Width="220">
+                        <StackPanel>
+                            <TextBlock Text="Total Calories Burned" FontSize="12" FontWeight="Bold" Margin="0,0,0,10" Foreground="Black"/>
+                            <TextBlock x:Name="CaloriesBurnedTextBlock" Text="Total Calories Burned: 0" FontSize="12" FontWeight="Bold" Foreground="Black"/>
+                        </StackPanel>
+                    </Border>
+
                     <Border Background="#FFDDC1" CornerRadius="15" Margin="10" Padding="20" Width="200">
                         <StackPanel>
                             <TextBlock Text="Daily Goal Suggestion" FontSize="12" FontWeight="Bold" Margin="0,0,0,10" Foreground="Black"/>
                             <TextBlock Text="Aim for 10 goals today!" FontSize="12" Foreground="Black"/>
-                        </StackPanel>
-                    </Border>
-
-                    <Border Background="#C6F6D5" CornerRadius="15" Margin="10" Padding="20" Width="200">
-                        <StackPanel>
-                            <TextBlock Text="Calories Burned Suggestion" FontSize="12" FontWeight="Bold" Margin="0,0,0,10" Foreground="Black"/>
-                            <TextBlock Text="Burn at least 300 calories!" FontSize="12" Foreground="Black"/>
                         </StackPanel>
                     </Border>
 
